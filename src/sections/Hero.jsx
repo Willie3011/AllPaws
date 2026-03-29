@@ -7,7 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 const Hero = () => {
   return (
     <section className="h-auto lg:h-dvh">
-      <div className="container h-full w-full">
+      <div className="container py-32 h-full w-full">
         <div className="h-full w-full flex flex-col md:flex-row gap-2">
           {/* main col */}
           <div className="w-full md:w-[50%] h-full grid grid-cols-1 lg:grid-cols-2 col-span-2 md:row-span-2 space-y-6 lg:space-y-0 items-center p-6 rounded-4xl bg-background">
