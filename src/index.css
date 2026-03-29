@@ -2,6 +2,52 @@
 
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #085F7C;     
+  --color-secondary: #4E91AE;   
+  --color-background: #A1C7DB;   
+  --color-light: #FCFCFB;        
+  --color-accent: #CBA06A;       
+  --color-neutral: #694C37;      
+
+}
+
 body {
   font-family: "DM Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 py-36
+}
+
+.primary-button {
+  @apply px-6 py-3 text-nowrap rounded-xs text-white flex items-center gap-2 bg-cyan-900 transition-all duration-300 ease-in-out
+}
+
+.primary-button:hover {
+  @apply -translate-y-0.5 bg-cyan-950
+}
+
+.ghost-button {
+  @apply px-6 py-3 text-nowrap rounded-xs border border-white text-white flex items-center gap-2 transition-all duration-300 ease-in-out 
+}
+
+.ghost-button:hover{
+  @apply -translate-y-0.5
+}
+
+.image-container{
+  @apply w-full h-full overflow-hidden
+}
+
+.image-contain {
+  @apply w-full h-full object-contain
+}
+
+.image-cover {
+  @apply w-full h-full object-cover
 }
